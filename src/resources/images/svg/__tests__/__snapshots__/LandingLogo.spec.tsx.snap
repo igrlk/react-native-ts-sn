@@ -1,0 +1,707 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoBackButton match to snapshot 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="42"
+  bbWidth="180"
+  fill="none"
+  focusable={false}
+  height="42"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+      Object {
+        "flex": 0,
+        "height": 42,
+        "width": 180,
+      },
+    ]
+  }
+  vbHeight={42}
+  vbWidth={180}
+  width="180"
+>
+  <RNSVGGroup
+    fill={null}
+    fillOpacity={1}
+    fillRule={1}
+    font={Object {}}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    opacity={1}
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth={1}
+    vectorEffect={0}
+    x={0}
+    y={0}
+  >
+    <RNSVGPath
+      d="M0.640726 24.9372C0.341721 24.9372 0.0889897 24.7069 0.0676322 24.4058C0.0213575 23.832 0 23.244 0 22.6631C0 10.1661 10.216 0 22.7743 0C35.3325 0 45.5485 10.1661 45.5485 22.6631C45.5485 23.2334 45.5271 23.8072 45.4844 24.374C45.4595 24.6892 45.1854 24.9301 44.8651 24.9053C44.5483 24.8805 44.3098 24.6042 44.3311 24.2889C44.3703 23.7505 44.3916 23.205 44.3916 22.6631C44.3916 10.8002 34.6953 1.14768 22.7707 1.14768C10.8496 1.14768 1.14975 10.8002 1.14975 22.6631C1.14975 23.2157 1.1711 23.7718 1.21382 24.3173C1.23874 24.6325 1.00024 24.9088 0.683441 24.9336C0.672762 24.9372 0.658524 24.9372 0.640726 24.9372Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M4.51361 25.0115C4.21816 25.0115 3.96543 24.7848 3.94052 24.4873C3.89424 23.9418 3.86932 23.3892 3.86932 22.8508C3.86932 12.4508 12.3696 3.99203 22.8206 3.99203C33.2715 3.99203 41.7754 12.4508 41.7754 22.8508C41.7754 23.3892 41.7647 23.8674 41.7078 24.4696C41.6793 24.7848 41.4016 25.0186 41.0813 24.9903C40.7645 24.9619 40.5295 24.6821 40.558 24.3668C40.6114 23.8107 40.6221 23.3608 40.6221 22.8543C40.6221 13.0884 32.6379 5.14325 22.8241 5.14325C13.0103 5.14325 5.02619 13.0884 5.02619 22.8543C5.02619 23.3608 5.04755 23.878 5.09382 24.3952C5.1223 24.7104 4.88381 24.9867 4.567 25.0151C4.54565 25.0115 4.52785 25.0115 4.51361 25.0115Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M24.8032 10.0847C24.8032 12.6209 22.5784 14.6754 22.5784 14.6754C22.5784 14.6754 20.3537 12.6209 20.3537 10.0847C20.3537 7.5485 22.5784 5.49402 22.5784 5.49402C22.5784 5.49402 24.8032 7.5485 24.8032 10.0847Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M27.8716 16.6236C25.9566 18.2991 22.938 17.9909 22.938 17.9909C22.938 17.9909 23.0199 14.9729 24.9349 13.2975C26.85 11.622 29.8721 11.9266 29.8721 11.9266C29.8721 11.9266 29.7867 14.9481 27.8716 16.6236Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M27.69 22.8862C25.775 24.5617 22.7564 24.257 22.7564 24.257C22.7564 24.257 22.8383 21.2355 24.7534 19.5636C26.6684 17.8881 29.6905 18.1928 29.6905 18.1928C29.6905 18.1928 29.6051 21.2107 27.69 22.8862Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M17.7374 16.6236C19.6524 18.2991 22.6745 17.9909 22.6745 17.9909C22.6745 17.9909 22.5927 14.9729 20.6776 13.2975C18.7625 11.622 15.7404 11.9266 15.7404 11.9266C15.7404 11.9266 15.8223 14.9481 17.7374 16.6236Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M17.5132 22.8437C19.4282 24.5192 22.4503 24.2146 22.4503 24.2146C22.4503 24.2146 22.3685 21.1931 20.4534 19.5211C18.5383 17.8457 15.5198 18.1503 15.5198 18.1503C15.5198 18.1503 15.5981 21.1683 17.5132 22.8437Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M40.049 36.3254C31.5202 34.7067 26.3267 39.014 23.8493 41.9894L29.7048 41.9859C31.3458 40.8914 33.542 40.0235 36.3755 40.0164C37.7388 38.9325 38.974 37.6927 40.049 36.3254Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M17.3282 41.9929L21.9841 41.9894C27.1847 33.8352 36.1441 34.3028 40.8535 35.2379C41.6579 34.0761 42.3521 32.8363 42.9216 31.5328C35.5355 29.6838 23.2691 30.0096 17.3282 41.9929Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M10.0915 40.112C10.5187 39.2193 11.1808 37.9618 12.1205 36.5273C10.7109 36.1518 8.03052 35.7444 5.66339 37.0763C6.61736 38.185 7.67812 39.1981 8.83143 40.1013C9.2657 40.0482 9.69997 40.0659 10.0915 40.112Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M12.7434 35.6098C13.4553 34.5967 14.2989 33.527 15.2778 32.4572C13.4375 31.4654 7.87741 29.8041 2.82635 32.8894C3.43504 34.0583 4.14696 35.1635 4.94787 36.1978C8.03047 34.2319 11.2483 35.036 12.7434 35.6098Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M16.5628 31.1432C17.5701 30.1691 18.7021 29.2233 19.9586 28.3413C16.7621 26.556 7.84178 24.1615 0.932617 27.817C1.24586 29.1312 1.67301 30.4029 2.21051 31.6143C7.79907 28.3626 13.3947 29.9565 16.5628 31.1432Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M11.2306 41.9753C11.3409 42.0426 11.5652 41.9327 11.6755 42L15.6801 41.9965C17.6912 37.8273 25.2269 25.7909 43.3701 30.4418C43.84 29.1879 44.1924 27.8808 44.4309 26.5312C20.6065 20.3678 12.0386 39.9526 11.2306 41.9753Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M54.3138 23.1258C54.3138 23.6318 54.4002 24.0637 54.573 24.4215C54.7458 24.7794 54.9864 25.0725 55.2949 25.3008C55.6034 25.5291 55.9582 25.6957 56.3593 25.8006C56.7603 25.9055 57.1953 25.9579 57.6643 25.9579C58.1702 25.9579 58.6022 25.8993 58.96 25.7821C59.3179 25.6648 59.6079 25.5137 59.83 25.3286C60.0522 25.1435 60.2126 24.9306 60.3113 24.6899C60.41 24.4493 60.4594 24.2056 60.4594 23.9588C60.4594 23.4528 60.3453 23.0795 60.117 22.8389C59.8887 22.5982 59.6388 22.4286 59.3673 22.3298C58.8983 22.1571 58.3523 21.9936 57.7291 21.8393C57.1059 21.685 56.3377 21.4845 55.4245 21.2377C54.8568 21.0896 54.3848 20.8952 54.0084 20.6546C53.632 20.414 53.3328 20.1456 53.1106 19.8494C52.8885 19.5532 52.7312 19.2385 52.6386 18.9053C52.5461 18.5721 52.4998 18.2328 52.4998 17.8873C52.4998 17.2209 52.6386 16.644 52.9163 16.1565C53.1939 15.669 53.5611 15.2649 54.0177 14.944C54.4743 14.6232 54.9926 14.3856 55.5726 14.2314C56.1526 14.0771 56.7387 14 57.3311 14C58.0222 14 58.6731 14.0895 59.284 14.2684C59.8948 14.4473 60.4316 14.7157 60.8944 15.0736C61.3572 15.4315 61.7243 15.8727 61.9958 16.3971C62.2673 16.9216 62.403 17.5294 62.403 18.2204H60.0892C60.0275 17.3689 59.7375 16.7674 59.2192 16.4157C58.7009 16.0639 58.0407 15.8881 57.2385 15.8881C56.967 15.8881 56.6894 15.9159 56.4056 15.9714C56.1217 16.0269 55.8626 16.1195 55.6281 16.2491C55.3936 16.3786 55.1993 16.5545 55.045 16.7766C54.8908 16.9987 54.8136 17.2764 54.8136 17.6096C54.8136 18.0785 54.9586 18.4457 55.2486 18.711C55.5386 18.9763 55.9181 19.1768 56.387 19.3126C56.4364 19.3249 56.6308 19.3774 56.9701 19.4699C57.3095 19.5625 57.689 19.6643 58.1085 19.7753C58.5281 19.8864 58.9384 19.9944 59.3395 20.0993C59.7406 20.2042 60.0275 20.2813 60.2003 20.3307C60.6322 20.4664 61.0086 20.6515 61.3294 20.886C61.6503 21.1205 61.9187 21.3889 62.1346 21.6912C62.3506 21.9936 62.511 22.3175 62.6159 22.663C62.7208 23.0086 62.7732 23.3541 62.7732 23.6996C62.7732 24.4401 62.6221 25.0725 62.3197 25.597C62.0174 26.1214 61.6194 26.5503 61.1258 26.8835C60.6322 27.2167 60.0707 27.4604 59.4413 27.6146C58.8119 27.7689 58.1702 27.846 57.5162 27.846C56.7634 27.846 56.0539 27.7535 55.3875 27.5684C54.7211 27.3833 54.1411 27.0994 53.6475 26.7169C53.1538 26.3343 52.7589 25.8438 52.4628 25.2453C52.1666 24.6468 52.0123 23.9403 52 23.1258H54.3138ZM64.7909 14.3147H74.3054V16.3139H67.1047V19.7754H73.7686V21.6635H67.1047V25.5322H74.435V27.5314H64.7909V14.3147ZM76.3601 14.3147H78.8036L84.8381 24.0514H84.8751V14.3147H87.0779V27.5314H84.6344L78.6185 17.8132H78.5629V27.5314H76.3601V14.3147ZM88.5587 14.3147H99.2579V16.3139H95.0559V27.5314H92.7421V16.3139H88.5587V14.3147ZM100.794 14.3147H103.108V27.5314H100.794V14.3147ZM105.848 14.3147H108.291L114.326 24.0514H114.363V14.3147H116.565V27.5314H114.122L108.106 17.8132H108.051V27.5314H105.848V14.3147ZM119.305 14.3147H128.82V16.3139H121.619V19.7754H128.283V21.6635H121.619V25.5322H128.949V27.5314H119.305V14.3147ZM130.967 14.3147H133.281V25.5322H140V27.5314H130.967V14.3147Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;

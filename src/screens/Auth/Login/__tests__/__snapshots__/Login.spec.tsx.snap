@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <RCTScrollView>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="small"
+          />
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

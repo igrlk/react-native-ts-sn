@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button match to snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    Some text in button
+  </Text>
+</View>
+`;

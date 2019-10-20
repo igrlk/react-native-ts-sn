@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoBackButton match to snapshot 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="26"
+  bbWidth="26"
+  fill="none"
+  focusable={false}
+  height="26"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+      Object {
+        "flex": 0,
+        "height": 26,
+        "width": 26,
+      },
+    ]
+  }
+  vbHeight={26}
+  vbWidth={26}
+  width="26"
+>
+  <RNSVGGroup
+    fill={null}
+    fillOpacity={1}
+    fillRule={1}
+    font={Object {}}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    opacity={1}
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth={1}
+    vectorEffect={0}
+    x={0}
+    y={0}
+  >
+    <RNSVGPath
+      d="M0.981132 6.62263H25.0189C25.5605 6.62263 26 6.18309 26 5.6415C26 5.09992 25.5605 4.66037 25.0189 4.66037H0.981132C0.439547 4.66037 0 5.09992 0 5.6415C0 6.18309 0.439547 6.62263 0.981132 6.62263Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M0.981132 13.9811H25.0189C25.5605 13.9811 26 13.5416 26 13C26 12.4584 25.5605 12.0189 25.0189 12.0189H0.981132C0.439547 12.0189 0 12.4584 0 13C0 13.5416 0.439547 13.9811 0.981132 13.9811Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+    <RNSVGPath
+      d="M0.981132 21.3396H25.0189C25.5605 21.3396 26 20.9001 26 20.3585C26 19.8169 25.5605 19.3773 25.0189 19.3773H0.981132C0.439547 19.3773 0 19.8169 0 20.3585C0 20.9001 0.439547 21.3396 0.981132 21.3396Z"
+      fill={
+        Array [
+          0,
+          4294967295,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;

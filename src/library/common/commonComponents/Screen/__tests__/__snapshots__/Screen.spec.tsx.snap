@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <RCTScrollView>
+        <View>
+          Some screen content
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

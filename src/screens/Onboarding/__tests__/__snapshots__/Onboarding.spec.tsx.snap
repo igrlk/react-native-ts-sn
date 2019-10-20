@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Onboarding match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <RCTScrollView>
+        <View>
+          <View>
+            <Text>
+              1. Select Service
+            </Text>
+            <Text>
+              Sign up on our app, select number of samples to be diagnosed, add mailing address and pay.
+            </Text>
+            <Text>
+              2. Ship Us Samples
+            </Text>
+            <Text>
+              Complete information on sample labels. Ship us samples in our pre-paid envelope.
+            </Text>
+            <Text>
+              3. Get Results
+            </Text>
+            <Text>
+              You can review the diagnosis report in less than a week. 
+            </Text>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Get Started
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

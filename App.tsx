@@ -1,71 +1,83 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Linking } from 'react-native';
+import { createAppContainer, NavigationStackRouterConfig } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
 
-import TestComp from './src/f1/TestComp';
+import 'library/utilities/styles';
+import { setNavigatorContainer } from 'library/utilities/navigator';
+import { getToken } from 'library/utilities/token';
+import { bindDeepLinkingHandlers } from 'library/utilities/deepLinking';
 
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import Login from 'screens/Auth/Login';
+import SignUpCreate from 'screens/Auth/SignUp/SignUpCreate';
+import SignUpConfirmed from 'screens/Auth/SignUp/SignUpConfirmed';
+import SignUpAddPassword from 'screens/Auth/SignUp/SignUpAddPassword';
+import ForgotPasswordCreate from 'screens/Auth/ForgotPassword/ForgotPasswordCreate';
+import ForgotPasswordConfirmed from 'screens/Auth/ForgotPassword/ForgotPasswordConfirmed';
+import Onboarding from 'screens/Onboarding';
+import Landing from 'screens/Landing';
+import FAQ from 'screens/FAQ';
+import RequestServiceCheckout from 'screens/RequestService/RequestServiceCheckout';
+import RequestServicePayment from 'screens/RequestService/RequestServicePayment';
+import RequestServiceConfirmation from 'screens/RequestService/RequestServiceConfirmation';
+import SampleList from 'screens/Sample/SampleList';
+import OrderDetail from 'screens/Sample/OrderDetail';
+import SampleDetail from 'screens/Sample/SampleDetail';
+import DiagnosticResult from 'screens/Sample/DiagnosticResult';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App = () => (
-  <View style={styles.sectionContainer}>
-    <Text style={styles.sectionTitle}>Learn More</Text>
-    <Text style={styles.sectionDescription}>
-      Read the docs to discover what to do next:
-    </Text>
-    <TestComp />
-  </View>
-)
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+const client = new ApolloClient({
+  uri: 'http://sentinel.oioio.ru:8889/graphql',
+  request: async operation => {
+    const authToken = await getToken();
+    operation.setContext({
+      headers: {
+        authorization: authToken ? `Bearer ${authToken}` : '',
+      },
+    });
   },
 });
 
-export default App;
+const AppStackNavigator = createStackNavigator(
+  {
+    Login,
+    SignUpCreate,
+    SignUpConfirmed,
+    SignUpAddPassword,
+    ForgotPasswordCreate,
+    ForgotPasswordConfirmed,
+    Onboarding,
+    Landing,
+    FAQ,
+    RequestServiceCheckout,
+    RequestServicePayment,
+    RequestServiceConfirmation,
+    SampleList,
+    OrderDetail,
+    SampleDetail,
+    DiagnosticResult,
+  },
+  {
+    initialRouteName: 'Login',
+    ref: setNavigatorContainer,
+    headerMode: 'none',
+    transitionConfig: () => ({
+      transitionSpec: {
+        duration: 0,
+      },
+    }),
+  } as NavigationStackRouterConfig,
+);
+
+const AppContainer = createAppContainer(AppStackNavigator);
+
+export default () => {
+  useEffect(bindDeepLinkingHandlers(Linking), []);
+
+  return (
+    <ApolloProvider client={client}>
+      <AppContainer />
+    </ApolloProvider>
+  );
+};

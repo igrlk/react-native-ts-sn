@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderDetail match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <RCTScrollView>
+        <View>
+          <View>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="22"
+                bbWidth="12"
+                fill="none"
+                focusable={false}
+                height="22"
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    undefined,
+                    Object {
+                      "opacity": 1,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 22,
+                      "width": 12,
+                    },
+                  ]
+                }
+                vbHeight={22}
+                vbWidth={12}
+                width="12"
+              >
+                <RNSVGGroup
+                  fill={null}
+                  fillOpacity={1}
+                  fillRule={1}
+                  font={Object {}}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                >
+                  <RNSVGPath
+                    d="M1.69385 10.9994L11.6294 1.06387C11.8738 0.819511 11.8738 0.427621 11.6294 0.183266C11.3851 -0.0610887 10.9932 -0.0610887 10.7488 0.183266L0.370644 10.5614C0.126289 10.8058 0.126289 11.1977 0.370644 11.442L10.7488 21.8156C10.8687 21.9355 11.0301 22 11.1868 22C11.3436 22 11.5049 21.9401 11.6248 21.8156C11.8692 21.5712 11.8692 21.1793 11.6248 20.935L1.69385 10.9994Z"
+                    fill={
+                      Array [
+                        0,
+                        4278190080,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={1}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+            <Text>
+              Order Detail
+            </Text>
+          </View>
+          <View>
+            <View>
+              <Text>
+                Sample #
+              </Text>
+              <Text />
+            </View>
+          </View>
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="small"
+          />
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input match to snapshot 1`] = `
+<View
+  style={Object {}}
+>
+  <View>
+    <Text
+      style={
+        Array [
+          undefined,
+          false,
+        ]
+      }
+    >
+      some-label
+    </Text>
+    some-right-label
+  </View>
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    multiline={true}
+    numberOfLines={4}
+    onChangeText={[MockFunction]}
+    rejectResponderTermination={true}
+    style={
+      Array [
+        undefined,
+        undefined,
+        false,
+      ]
+    }
+    underlineColorAndroid="transparent"
+    value="some-value"
+  />
+  <Text>
+    some-error
+  </Text>
+</View>
+`;
