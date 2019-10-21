@@ -26,6 +26,7 @@ import SampleList from 'screens/Sample/SampleList';
 import OrderDetail from 'screens/Sample/OrderDetail';
 import SampleDetail from 'screens/Sample/SampleDetail';
 import DiagnosticResult from 'screens/Sample/DiagnosticResult';
+import PDFScreen from 'screens/PDFScreen';
 
 const client = new ApolloClient({
   uri: 'http://sentinel.oioio.ru:8889/graphql',
@@ -57,9 +58,10 @@ const AppStackNavigator = createStackNavigator(
     OrderDetail,
     SampleDetail,
     DiagnosticResult,
+    PDFScreen,
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'PDFScreen',
     ref: setNavigatorContainer,
     headerMode: 'none',
     transitionConfig: () => ({

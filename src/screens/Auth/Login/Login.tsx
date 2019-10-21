@@ -13,61 +13,61 @@ import styles from './loginStyles';
 import { checkTokenForLogin } from 'library/utilities/token';
 
 export default function Login() {
-	const [isCheckingToken, setIsCheckingToken] = useState(true);
+  const [isCheckingToken, setIsCheckingToken] = useState(true);
 
-	const {
-		email,
-		setEmail,
-		emailError,
-		password,
-		setPassword,
-		passwordError,
-		makeLogin,
-		loading,
-	} = useLogin();
+  const {
+    email,
+    setEmail,
+    emailError,
+    password,
+    setPassword,
+    passwordError,
+    makeLogin,
+    loading,
+  } = useLogin();
 
-	useEffect(() => {
-		checkTokenForLogin().then(r => !r && setIsCheckingToken(false));
-	}, []);
+  useEffect(() => {
+    checkTokenForLogin().then(r => !r && setIsCheckingToken(false));
+  }, []);
 
-	return (
-		<Screen>
-			<WithLoader loading={isCheckingToken}>
-				<View style={styles.logo}>
-					<LoginLogo />
-				</View>
+  return (
+    <Screen>
+      <WithLoader loading={isCheckingToken}>
+        <View style={styles.logo}>
+          <LoginLogo />
+        </View>
 
-				<WithLoader loading={loading}>
-					<Input
-						value={email}
-						onChange={setEmail}
-						label='Email'
-						style={styles.inputEmail}
-						error={emailError}
-					/>
-					<Input
-						value={password}
-						onChange={setPassword}
-						label='Password'
-						rightLabel={
-							<Text style={styles.forgotPassword} onPress={getNavigateTo('ForgotPasswordCreate')}>
-								Forgot password
-							</Text>
-						}
-						style={styles.inputPassword}
-						error={passwordError}
-					/>
+        <WithLoader loading={loading}>
+          <Input
+            value={email}
+            onChange={setEmail}
+            label='Email'
+            style={styles.inputEmail}
+            error={emailError}
+          />
+          <Input
+            value={password}
+            onChange={setPassword}
+            label='Password'
+            rightLabel={
+              <Text style={styles.forgotPassword} onPress={getNavigateTo('ForgotPasswordCreate')}>
+                Forgot password
+              </Text>
+            }
+            style={styles.inputPassword}
+            error={passwordError}
+          />
 
-					<Button onClick={makeLogin}>Login</Button>
+          <Button onClick={makeLogin}>Login</Button>
 
-					<View style={styles.orContainer}>
-						<View style={styles.orLine} />
-						<Text style={styles.orText}>or</Text>
-					</View>
+          <View style={styles.orContainer}>
+            <View style={styles.orLine} />
+            <Text style={styles.orText}>or</Text>
+          </View>
 
-					<Button onClick={getNavigateTo('SignUpCreate')}>Create an Account</Button>
-				</WithLoader>
-			</WithLoader>
-		</Screen>
-	);
+          <Button onClick={getNavigateTo('SignUpCreate')}>Create an Account</Button>
+        </WithLoader>
+      </WithLoader>
+    </Screen>
+  );
 }
