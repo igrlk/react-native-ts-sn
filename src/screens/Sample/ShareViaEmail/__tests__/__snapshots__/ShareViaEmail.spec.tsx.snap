@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignUpCreate match to snapshot 1`] = `
+exports[`ShareViaEmail match to snapshot 1`] = `
 <View
   style={
     Object {
@@ -158,7 +158,7 @@ exports[`SignUpCreate match to snapshot 1`] = `
               </RNSVGSvgView>
             </View>
             <Text>
-              Create an Account
+              Share via Email
             </Text>
           </View>
           <View>
@@ -220,7 +220,7 @@ exports[`SignUpCreate match to snapshot 1`] = `
                 ]
               }
             >
-              Sign Up
+              Send Email
             </Text>
           </View>
         </View>

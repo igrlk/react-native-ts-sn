@@ -39,6 +39,7 @@ export default function Input({
 				style={[styles.input, multiline && styles.textArea, theme === 'dark' && styles.inputDark]}
 				multiline={multiline}
 				numberOfLines={numberOfLines}
+				secureTextEntry={label === 'Password' ? true : false}
 			/>
 			{error && <Text style={styles.error}>{error}</Text>}
 		</View>

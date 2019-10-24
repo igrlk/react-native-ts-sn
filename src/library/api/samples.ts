@@ -52,7 +52,7 @@ export const GET_CROPS = gql`
 `;
 
 export const GET_CROP_PATHOGENS = gql`
-	query cropDiseases($crop: String) {
+	query cropDiseases($crop: String!) {
 		cropDiseases(crop: $crop) {
 			uuid
 			name
@@ -94,4 +94,20 @@ export const GET_SAMPLE_STATUS = gql`
 			date
 		}
 	}
+`;
+
+export const SEND_EMAIL_QUERY = gql`
+	query sendEmail($email: String!, $title: String!, $body: String!) {
+		sendEmail(params: { email: $email, title: $title, body: $body })
+	}
+`;
+
+export const GET_DIAGNOSTIC_RESULT = gql`
+	query getResult($uuid: String!) {
+		getResult(uuid: $uuid) {
+		pathogen
+		result
+		key_concern
+		}
+  	}
 `;

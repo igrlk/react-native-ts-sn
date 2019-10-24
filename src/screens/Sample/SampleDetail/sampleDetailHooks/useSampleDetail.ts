@@ -103,6 +103,7 @@ export async function makeSampleEditingHandler({
 	await editSampleMutation({
 		variables: {
 			...sample,
+			city: location,
 			crop: (activeCrop || {}).uuid,
 			zipCode: '',
 			diseases: selectedPathogens,

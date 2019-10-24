@@ -4,6 +4,8 @@ import { ApolloClient, InMemoryCache } from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { createHttpLink } from 'apollo-link-http';
 
+jest.mock('react-native-gesture-handler', () => {});
+
 import SampleDetail, { updateActiveCrop, updatePathogens } from '../SampleDetail';
 
 describe('SampleDetail', () => {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignUpCreate match to snapshot 1`] = `
+exports[`SuccessfulDownloadScreen match to snapshot 1`] = `
 <View
   style={
     Object {
@@ -21,30 +21,14 @@ exports[`SignUpCreate match to snapshot 1`] = `
       <RCTScrollView>
         <View>
           <View>
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "opacity": 1,
-                }
-              }
-            >
+            <View>
               <RNSVGSvgView
                 align="xMidYMid"
-                bbHeight="22"
-                bbWidth="12"
+                bbHeight="43"
+                bbWidth="43"
                 fill="none"
                 focusable={false}
-                height="22"
+                height="43"
                 meetOrSlice={0}
                 minX={0}
                 minY={0}
@@ -60,14 +44,14 @@ exports[`SignUpCreate match to snapshot 1`] = `
                     },
                     Object {
                       "flex": 0,
-                      "height": 22,
-                      "width": 12,
+                      "height": 43,
+                      "width": 43,
                     },
                   ]
                 }
-                vbHeight={22}
-                vbWidth={12}
-                width="12"
+                vbHeight={43}
+                vbWidth={43}
+                width="43"
               >
                 <RNSVGGroup
                   fill={null}
@@ -110,11 +94,56 @@ exports[`SignUpCreate match to snapshot 1`] = `
                   y={0}
                 >
                   <RNSVGPath
-                    d="M1.69385 10.9994L11.6294 1.06387C11.8738 0.819511 11.8738 0.427621 11.6294 0.183266C11.3851 -0.0610887 10.9932 -0.0610887 10.7488 0.183266L0.370644 10.5614C0.126289 10.8058 0.126289 11.1977 0.370644 11.442L10.7488 21.8156C10.8687 21.9355 11.0301 22 11.1868 22C11.3436 22 11.5049 21.9401 11.6248 21.8156C11.8692 21.5712 11.8692 21.1793 11.6248 20.935L1.69385 10.9994Z"
+                    d="M21.5 0C9.64493 0 0 9.64493 0 21.5C0 33.3551 9.64493 43 21.5 43C33.3551 43 43 33.3551 43 21.5C42.9992 9.64493 33.3551 0 21.5 0ZM21.5 39.5346C11.5555 39.5346 3.46535 31.4445 3.46535 21.4992C3.46535 11.5548 11.5555 3.46458 21.5 3.46458C31.4445 3.46458 39.5346 11.5555 39.5346 21.5C39.5346 31.4445 31.4445 39.5346 21.5 39.5346Z"
                     fill={
                       Array [
                         0,
-                        4278190080,
+                        4281324438,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={1}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                  <RNSVGPath
+                    d="M28.3535 14.6441L18.3179 24.6805L14.6457 21.0082C13.9694 20.3312 12.8725 20.3312 12.1962 21.0082C11.5192 21.6845 11.5192 22.7814 12.1962 23.4577L17.0936 28.355C17.4317 28.6931 17.8756 28.863 18.3187 28.863C18.7618 28.863 19.2049 28.6939 19.543 28.355L30.8037 17.0944C31.4799 16.4173 31.4799 15.3212 30.8037 14.6441C30.1267 13.9679 29.0305 13.9679 28.3535 14.6441Z"
+                    fill={
+                      Array [
+                        0,
+                        4281324438,
                       ]
                     }
                     fillOpacity={1}
@@ -156,72 +185,41 @@ exports[`SignUpCreate match to snapshot 1`] = `
                   />
                 </RNSVGGroup>
               </RNSVGSvgView>
+              <Text>
+                Loading is complete
+              </Text>
+              <Text>
+                
+              </Text>
             </View>
-            <Text>
-              Create an Account
-            </Text>
-          </View>
-          <View>
             <View
-              style={Object {}}
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
             >
-              <View>
-                <Text
-                  style={
-                    Array [
-                      undefined,
-                      false,
-                    ]
-                  }
-                >
-                  Email
-                </Text>
-              </View>
-              <TextInput
-                allowFontScaling={true}
-                autoCapitalize="none"
-                onChangeText={[Function]}
-                rejectResponderTermination={true}
-                secureTextEntry={false}
+              <Text
                 style={
                   Array [
                     undefined,
                     undefined,
-                    false,
                   ]
                 }
-                underlineColorAndroid="transparent"
-                value=""
-              />
+              >
+                Go Back
+              </Text>
             </View>
-          </View>
-          <View
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <Text
-              style={
-                Array [
-                  undefined,
-                  undefined,
-                ]
-              }
-            >
-              Sign Up
-            </Text>
           </View>
         </View>
       </RCTScrollView>

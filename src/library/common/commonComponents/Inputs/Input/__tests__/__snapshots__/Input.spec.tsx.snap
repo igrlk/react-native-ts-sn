@@ -24,6 +24,7 @@ exports[`Input match to snapshot 1`] = `
     numberOfLines={4}
     onChangeText={[MockFunction]}
     rejectResponderTermination={true}
+    secureTextEntry={false}
     style={
       Array [
         undefined,

@@ -1,5 +1,6 @@
-import React from 'react';
-import { View, ScrollView, Text } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, ScrollView, Text, Platform } from 'react-native';
+import { useQuery } from '@apollo/react-hooks';
 
 import Screen from 'library/common/commonComponents/Screen';
 import GoBackButton from 'library/common/commonComponents/Buttons/GoBackButton';
@@ -9,80 +10,86 @@ import SubHeader from 'library/common/commonComponents/SubHeader';
 import DiagnosticResultIcon from 'resources/images/svg/DiagnosticResultIcon';
 import DownloadArrow from 'resources/images/svg/DownloadArrow';
 import Share from 'resources/images/svg/Share';
+import { navigateTo } from 'library/utilities/navigator';
+import dowloadPdf from 'library/utilities/downloadPDF';
+import { getDiagnosticResultHTML } from 'library/utilities/getHTML';
+import { GET_DIAGNOSTIC_RESULT } from 'library/api/samples';
+import WithLoader from 'library/common/commonComponents/WithLoader';
+import { NavigationParams } from 'library/common/commonTypes/navigation';
+import { getDateForSample } from 'library/utilities/date';
 
 import styles from './diagnosticResultStyles';
 
-export default function DiagnosticResult() {
+interface DiagnosticResultProps {
+	navigation: NavigationParams;
+};
+
+export default function DiagnosticResult({ navigation }: DiagnosticResultProps) {
+	const sample = (navigation.state.params || {}).sample || {};
+	const { uuid, crop, city, created  } = sample;
+	const dateOfSampling = created && getDateForSample(created);
+	const newDate = new Date().getTime();
+	const dateOfReport = getDateForSample(newDate);
+
+	const [html, getHTML] = useState<string>('');
+	const options = {
+		html: html,
+        fileName: 'Diagnostic-result',
+        directory: (Platform.OS === 'ios') ? 'Documents' : 'Downloads',
+	};
+	const { data, loading } = useQuery(GET_DIAGNOSTIC_RESULT, { variables: { uuid } });
+
+	useEffect(() => {
+		if (data) {
+			const diagnostic = getDiagnosticResultHTML(uuid, crop, city, dateOfSampling, dateOfReport, data.getResult);
+			getHTML(diagnostic);
+		}
+	}, [data]);
+
 	return (
 		<Screen>
-			<GoBackButton>Diagnostic Result</GoBackButton>
-			<ScrollView style={styles.containerScroll}>
-				<View style={styles.logo}>
-					<DiagnosticResultIcon />
-				</View>
-
-				<View style={styles.row}>
-					<TextWithLabel label='Sample #' text='7001' />
-					<TextWithLabel label='Crop' text='Tomato' />
-				</View>
-
-				<View>
-					<TextWithLabel label='Sampling Location' text='LA' />
-				</View>
-
-				<View style={styles.row}>
-					<TextWithLabel label='Date of Sampling' text='Sep 1, 2019' />
-					<TextWithLabel label='Date of Report' text='Sep 5, 2019' />
-				</View>
-
-				<SubHeader>Suspected Diseases</SubHeader>
-
-				<View style={styles.pathogenBlock}>
-					<TextWithLabel label='Pathogen' text='User Specified #1' />
-					<View style={[styles.bage, styles.orangeBackground]}>
-						<Text style={styles.bageColor}>Detected</Text>
+			<WithLoader loading={loading}>
+				<GoBackButton>Diagnostic Result</GoBackButton>
+				<ScrollView style={styles.containerScroll}>
+					<View style={styles.logo}>
+						<DiagnosticResultIcon />
 					</View>
-				</View>
 
-				<View style={styles.pathogenBlock}>
-					<TextWithLabel label='Pathogen' text='User Specified #2' />
-					<View style={[styles.bage, styles.orangeBackground]}>
-						<Text style={styles.bageColor}>Detected</Text>
+					<View style={styles.row}>
+						<TextWithLabel label='Sample #' text={uuid} />
+						<TextWithLabel label='Crop' text={crop} />
 					</View>
-				</View>
 
-				<View style={[styles.pathogenBlock, styles.lastChildMargin]}>
-					<TextWithLabel label='Pathogen' text='User Specified #3' />
-					<View style={[styles.bage, styles.greenBackground]}>
-						<Text style={styles.bageColor}>Not Detected</Text>
+					<View>
+						<TextWithLabel label='Sampling Location' text={city} />
 					</View>
-				</View>
 
-				<SubHeader>Other concerns</SubHeader>
-
-				<Text style={styles.text}>We tested for over 1000 pathogens</Text>
-
-				<View style={styles.pathogenBlock}>
-					<TextWithLabel label='Pathogen' text='Pathogen #1 Identified' />
-					<View style={[styles.bage, styles.orangeBackground]}>
-						<Text style={styles.bageColor}>Detected</Text>
+					<View style={styles.row}>
+						<TextWithLabel label='Date of Sampling' text={dateOfSampling} />
+						<TextWithLabel label='Date of Report' text={dateOfReport} />
 					</View>
-				</View>
 
-				<View style={[styles.pathogenBlock, styles.lastChildMargin]}>
-					<TextWithLabel label='Pathogen' text='All other pathogens' />
-					<View style={[styles.bage, styles.orangeBackground]}>
-						<Text style={styles.bageColor}>Detected</Text>
+					<SubHeader>Suspected Diseases</SubHeader>
+
+					<View style={styles.diseaseBlock}>
+						{data && data.getResult.map((item: any) =>(
+							<View style={styles.pathogenBlock}>
+								<TextWithLabel label='Pathogen' text={item.pathogen} />
+								<View style={item.result ? [styles.bage, styles.orangeBackground] : [styles.bage, styles.greenBackground]}>
+									<Text style={styles.bageColor}>{item.result ? 'Detected' : 'Not Detected'}</Text>
+								</View>
+							</View>)
+						)}
 					</View>
-				</View>
 
-				<Button type='info' onClick={() => {}} style={styles.button} icon={<Share />}>
-					<Text>Share via Email</Text>
-				</Button>
-				<Button type='info' onClick={() => {}} style={[styles.button, styles.lastChildMargin]} icon={<DownloadArrow />}>
-					<Text>Download PDF</Text>
-				</Button>
-			</ScrollView>
+					<Button type='info' onClick={() => navigateTo('ShareViaEmail', { uuid, result: data.getResult, dateOfReport, dateOfSampling, crop, city })} style={styles.button} icon={<Share />}>
+						<Text>Share via Email</Text>
+					</Button>
+					<Button type='info' onClick={() => dowloadPdf(options, 'SuccessfulDownloadScreen', 'DiagnosticResult')} style={[styles.button, styles.lastChildMargin]} icon={<DownloadArrow />}>
+						<Text>Download PDF</Text>
+					</Button>
+				</ScrollView>
+			</WithLoader>
 		</Screen>
 	);
 }

@@ -21,9 +21,8 @@ export default EStyleSheet.create({
 	},
 	bage: {
 		height: 24,
+		width: 110,
 		fontSize: 12,
-		paddingLeft: 15,
-		paddingRight: 15,
 		borderRadius: 4,
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -49,4 +48,7 @@ export default EStyleSheet.create({
 	button: {
 		marginBottom: 14,
 	},
+	diseaseBlock: {
+		marginBottom: 20,
+	}
 });
