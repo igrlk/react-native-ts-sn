@@ -137,7 +137,7 @@ export default function OrderDetail({ navigation }: OrderDetailProps) {
 				</WithLoader>
 
 				{sampleStages[4] ? (
-					<Button onClick={getNavigateTo('DiagnosticResult')}>View Report</Button>
+					<Button onClick={getNavigateTo('DiagnosticResult', { sample })}>View Report</Button>
 				) : sampleStages[3] ? null : (
 					<Button onClick={getNavigateTo('SampleDetail', { sample })}>View Sample Detail</Button>
 				)}

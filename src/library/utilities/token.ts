@@ -1,6 +1,6 @@
 import AsyncStorage from 'library/utilities/asyncStorage';
 
-import { resetNavigation, navigateTo } from './navigator';
+import { resetNavigation } from './navigator';
 
 export const name = 'authToken';
 

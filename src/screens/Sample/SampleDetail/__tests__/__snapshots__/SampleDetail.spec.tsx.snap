@@ -201,6 +201,7 @@ exports[`SampleDetail match to snapshot 1`] = `
                 onChangeText={[Function]}
                 onFocus={[Function]}
                 rejectResponderTermination={true}
+                secureTextEntry={false}
                 underlineColorAndroid="transparent"
                 value=""
               />
@@ -348,6 +349,7 @@ exports[`SampleDetail match to snapshot 1`] = `
           autoCapitalize="none"
           onChangeText={[Function]}
           rejectResponderTermination={true}
+          secureTextEntry={false}
           style={
             Array [
               undefined,
@@ -400,6 +402,7 @@ exports[`SampleDetail match to snapshot 1`] = `
                 onChangeText={[Function]}
                 onFocus={[Function]}
                 rejectResponderTermination={true}
+                secureTextEntry={false}
                 underlineColorAndroid="transparent"
                 value=""
               />
@@ -562,6 +565,7 @@ exports[`SampleDetail match to snapshot 1`] = `
                 onChangeText={[Function]}
                 onFocus={[Function]}
                 rejectResponderTermination={true}
+                secureTextEntry={false}
                 underlineColorAndroid="transparent"
                 value=""
               />
@@ -724,6 +728,7 @@ exports[`SampleDetail match to snapshot 1`] = `
                 onChangeText={[Function]}
                 onFocus={[Function]}
                 rejectResponderTermination={true}
+                secureTextEntry={false}
                 underlineColorAndroid="transparent"
                 value=""
               />

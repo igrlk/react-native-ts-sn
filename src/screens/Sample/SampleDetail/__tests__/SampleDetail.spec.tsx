@@ -1,4 +1,37 @@
-import { updateActiveCrop, updatePathogens } from '../SampleDetail';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { ApolloClient, InMemoryCache } from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
+import { createHttpLink } from 'apollo-link-http';
+
+jest.mock('react-native-gesture-handler', () => {});
+
+import SampleDetail, { updateActiveCrop, updatePathogens } from '../SampleDetail';
+
+describe('SampleDetail', () => {
+	it('match to snapshot', () => {
+		const tree = renderer
+			.create(
+				<ApolloProvider
+					client={
+						new ApolloClient({
+							link: createHttpLink({
+								uri: 'some-uri ',
+								fetch: jest.fn(() => Promise.resolve() as any),
+							}),
+							cache: new InMemoryCache(),
+						})
+					}
+				>
+					<SampleDetail
+						navigation={{ state: { params: { sample: { created: 10, uuid: 'qwe' } } } } as any}
+					/>
+				</ApolloProvider>,
+			)
+			.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
+});
 
 describe('updateActiveCrop', () => {
   it('should do notthing if !data || !data.crops', () => {

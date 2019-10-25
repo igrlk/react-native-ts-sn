@@ -217,7 +217,7 @@ exports[`RequestServiceConfirmation match to snapshot 1`] = `
             </View>
           </View>
           <Text>
-            Thank you for your request. You will receive a sampling kit, instructions and pre-paid return envelope soon. Please be prepared to add sampling location, crop and any diseases of concern to the label on the sample bag.
+            Thank you for your request. You will receive a sample kit(s), instructions and pre-paid return envelope in 3-5 business days.
           </Text>
           <View
             accessible={true}

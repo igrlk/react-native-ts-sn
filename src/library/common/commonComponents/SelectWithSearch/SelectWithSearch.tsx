@@ -50,6 +50,7 @@ export default function SelectWithSearch({
             onChangeText={setValue}
             style={styles.input}
             onFocus={() => setIsDropdownVisible(true)}
+            secureTextEntry={label === 'password' ? true : false}
           />
           {error && <Text style={styles.error}>{error}</Text>}
 
