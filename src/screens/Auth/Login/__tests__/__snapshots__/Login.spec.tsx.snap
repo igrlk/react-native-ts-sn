@@ -20,12 +20,21 @@ exports[`Login match to snapshot 1`] = `
     <View>
       <RCTScrollView>
         <View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="small"
-          />
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "paddingBottom": 0,
+              }
+            }
+          >
+            <ActivityIndicator
+              animating={true}
+              color="#999999"
+              hidesWhenStopped={true}
+              size="small"
+            />
+          </View>
         </View>
       </RCTScrollView>
     </View>

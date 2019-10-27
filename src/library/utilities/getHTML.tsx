@@ -90,7 +90,7 @@ export function receiptHTML(name: string, quantity: number, dateOfRequest: strin
           </div>
         </div>
   
-        <div class="info-text">Thank you for your request. You will receive a sample kit(s), instructions and pre-paid return envelope in 3-5 business days.</div>
+        <div class="info-text">Thank you for your request! Look for a confirmation message in your email for further information.</div>
       </div>
     `;
 }

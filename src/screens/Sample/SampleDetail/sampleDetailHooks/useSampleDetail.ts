@@ -33,7 +33,6 @@ export default function useSampleDetail(sample: any) {
 
 	useEffect(() => {
 		if (data && data.cropDiseases) {
-			console.log('data', data.cropDiseases);
 			setPathogens(data.cropDiseases.map((disease: any) => ({ ...disease, text: disease.name })));
 		}
 	}, [data]);

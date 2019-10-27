@@ -25,7 +25,7 @@ type SampleStatus = {
 
 export default function OrderDetail({ navigation }: OrderDetailProps) {
 	const sample = (navigation.state.params || {}).sample || {};
-
+	const id = sample.number ? sample.number : 'New Request';
 	const [sampleStages, setSampleStages] = useState<SampleStatus[]>([]);
 	const { data, loading } = useQuery(GET_SAMPLE_STATUS, { variables: { uuid: sample.uuid } });
 	useEffect(() => {
@@ -36,7 +36,7 @@ export default function OrderDetail({ navigation }: OrderDetailProps) {
 		<Screen>
 			<GoBackButton>Order Detail</GoBackButton>
 			<View style={styles.textWithLabel}>
-				<TextWithLabel label='Sample #' text={sample.uuid} />
+				<TextWithLabel label='Sample #' text={id} />
 			</View>
 
 			<WithLoader loading={loading}>
@@ -50,7 +50,7 @@ export default function OrderDetail({ navigation }: OrderDetailProps) {
 								<Text
 									style={[styles.sampleStatusText, sampleStages[0] && styles.sampleStatusTextRed]}
 								>
-									Sample Requested
+									Sample Kit Requested
 								</Text>
 								{sampleStages[0] && (
 									<Text style={styles.sampleStatusDate}>

@@ -182,12 +182,21 @@ exports[`SampleList match to snapshot 1`] = `
               >
                 <View>
                   <Text>
-                    Request
+                    New Request
                   </Text>
                   <View>
-                    <View />
+                    <View
+                      style={
+                        Array [
+                          undefined,
+                          Object {
+                            "backgroundColor": "#EA4640",
+                          },
+                        ]
+                      }
+                    />
                     <Text>
-                      Sample Requested (
+                       (
                       Jan  1, 1970
                       )
                     </Text>

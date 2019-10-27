@@ -5,8 +5,7 @@ export default EStyleSheet.create({
     marginTop: 7,
     marginBottom: 17,
     color: '$colorBlack',
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: '$fontSize.mini',
     fontStyle: 'italic',
   },
   textWithLabelContainer: {
@@ -18,8 +17,7 @@ export default EStyleSheet.create({
   addMore: {
     color: '$colorBlue',
     fontFamily: 'Poppins',
-    fontSize: 12,
-    lineHeight: 18,
+    fontSize: '$fontSize.xmini',
     marginBottom: 80,
   },
   button: {
@@ -33,6 +31,6 @@ export default EStyleSheet.create({
     flex: 1,
   },
   screenInner: {
-    width: 300,
+    width: '100%',
   },
 });

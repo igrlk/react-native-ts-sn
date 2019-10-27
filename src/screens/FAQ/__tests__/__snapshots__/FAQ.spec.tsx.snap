@@ -216,7 +216,7 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                What diseases does this service test for? 
+                What diseases does this service test for?
               </Text>
               <Text>
                 We test for over 1,000 plant diseases simultaneously. That includes bacteria, fungi, oomycetes, viruses, and viroids. In the future, the full list will be available for you to download.
@@ -231,7 +231,7 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                How can you test for so many diseases at once? 
+                How can you test for so many diseases at once?
               </Text>
               <Text>
                 We took a diagnostic method from human healthcare and have adapted it for agriculture. We use genetic information from the plant combined with a proprietary data analysis process to ensure we are capturing every possible pathogen in your sample.
@@ -246,10 +246,10 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                What is in the sampling kit? 
+                On what crops can you perform Sentinel testing?
               </Text>
               <Text>
-                The sampling kit contains a detailed instruction page with how to collect leaves and the size of leaf required, Ziploc baggies to collect leaves in, and a pre-paid return mailing envelope for you to ship the samples back to us.
+                Currently, we know that Sentinel works on vegetable crops including tomato, pepper, melon, watermelon, cucumber, squash, lettuce, broccoli, spinach, and corn. We are completing beta testing to show that Sentinel also works on grape, berries, nut trees, and fruit trees.
               </Text>
             </View>
             <View>
@@ -261,7 +261,22 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                What is a sample? 
+                What is in the sampling kit?
+              </Text>
+              <Text>
+                The sampling kit contains a detailed instruction page with how to collect leaves and the size of leaf required, resealable plastic baggies to collect leaves in, and a pre-paid return mailing envelope for you to ship the samples back to us.
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                What is a sample?
               </Text>
               <Text>
                 A single sample can contain anywhere from 1 to 100 leaves. If you are seeing symptoms in your field, you can send us symptomatic leaves from just a few plants to diagnose. If you want to do a broad screen for pathogens, you can send us up to 100 randomly sampled leaves from your growing location for us to test.
@@ -276,7 +291,7 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                How many samples can I get tested at one time? 
+                How many samples can I get tested at one time?
               </Text>
               <Text>
                 Beta testers may submit up to 5 samples for free during this phase of our product testing and launch.
@@ -336,12 +351,164 @@ exports[`FAQ match to snapshot 1`] = `
                   ]
                 }
               >
-                How long will it take to get results once I ship my sample? 
+                How long will it take to get results once I ship my sample?
               </Text>
               <Text>
                 You can expect results in the app in 10-14 business days from the time your samples are received in our lab.
               </Text>
             </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                How can I contact the Sentinel Team if I have a problem?
+              </Text>
+              <Text>
+                Email: contact@sentinelagdiagnostics.com
+Phone: 1-530-669-6223
+              </Text>
+            </View>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="40"
+              bbWidth="40"
+              fill="none"
+              focusable={false}
+              height="40"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  undefined,
+                  Object {
+                    "opacity": 1,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 40,
+                    "width": 40,
+                  },
+                ]
+              }
+              vbHeight={40}
+              vbWidth={40}
+              width="40"
+            >
+              <RNSVGGroup
+                fill={null}
+                fillOpacity={1}
+                fillRule={1}
+                font={Object {}}
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+                opacity={1}
+                originX={0}
+                originY={0}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+                rotation={0}
+                scaleX={1}
+                scaleY={1}
+                skewX={0}
+                skewY={0}
+                stroke={null}
+                strokeDasharray={null}
+                strokeDashoffset={null}
+                strokeLinecap={0}
+                strokeLinejoin={0}
+                strokeMiterlimit={4}
+                strokeOpacity={1}
+                strokeWidth={1}
+                vectorEffect={0}
+                x={0}
+                y={0}
+              >
+                <RNSVGPath
+                  d="M37.3183 9.96076C35.5298 6.89672 33.1038 4.47072 30.0397 2.68231C26.975 0.893981 23.6295 0 20.0006 0C16.372 0 13.0255 0.893981 9.96139 2.68231C6.89709 4.47045 4.47109 6.89645 2.68258 9.96076C0.893981 13.0252 0 16.3718 0 20C0 23.6285 0.894254 26.9745 2.68231 30.0392C4.47072 33.1032 6.89672 35.5292 9.96103 37.3178C13.0255 39.106 16.3718 40.0001 20.0002 40.0001C23.6287 40.0001 26.9753 39.106 30.0396 37.3178C33.1037 35.5298 35.5296 33.1032 37.318 30.0392C39.106 26.9748 39.9999 23.6283 39.9999 20C40 16.3714 39.106 13.0248 37.3183 9.96076ZM32.9955 23.6714L30.3391 26.3283C30.0088 26.658 29.6184 26.8231 29.1672 26.8231C28.7159 26.8231 28.3248 26.658 27.9954 26.3283L20.0002 18.3332L12.0058 26.3283C11.6759 26.658 11.2854 26.8231 10.8339 26.8231C10.3824 26.8231 9.99177 26.658 9.66185 26.3283L7.00572 23.6714C6.6758 23.3424 6.5108 22.951 6.5108 22.4996C6.5108 22.0488 6.6758 21.6579 7.00572 21.3277L18.8288 9.50496C19.1587 9.17505 19.5492 9.01022 20.0006 9.01022C20.452 9.01022 20.8432 9.17505 21.1723 9.50496L32.9955 21.3277C33.325 21.6579 33.4902 22.0487 33.4902 22.4996C33.4902 22.9509 33.3254 23.3423 32.9955 23.6714Z"
+                  fill={
+                    Array [
+                      0,
+                      4282103114,
+                    ]
+                  }
+                  fillOpacity={1}
+                  fillRule={1}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
           </View>
         </View>
       </RCTScrollView>

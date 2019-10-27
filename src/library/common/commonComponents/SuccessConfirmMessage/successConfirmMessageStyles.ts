@@ -8,8 +8,7 @@ export default EStyleSheet.create({
 	},
 	title: {
 		fontFamily: 'Poppins',
-		fontSize: 24,
-		lineHeight: 36,
+		fontSize: '$fontSize.xlarge',
 		marginTop: 28,
 		marginBottom: 25,
 		color: '$colorBlack',
@@ -17,7 +16,7 @@ export default EStyleSheet.create({
 	},
 	text: {
 		fontFamily: 'Poppins',
-		fontSize: 18,
+		fontSize: '$fontSize.medium',
 		textAlign: 'center',
 		color: '#9E9E9E',
 	},

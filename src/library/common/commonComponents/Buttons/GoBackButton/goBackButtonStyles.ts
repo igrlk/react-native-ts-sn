@@ -6,12 +6,14 @@ export default EStyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		marginTop: 10,
 	},
 	text: {
 		fontFamily: 'Poppins',
-		fontSize: 24,
-		lineHeight: 36,
-		marginLeft: 21,
+		fontSize: '$fontSize.xlarge',
+	},
+	backButton: {
+		paddingVertical: 10,
+		paddingLeft: 0,
+		paddingRight: 21,
 	},
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderDetail match to snapshot 1`] = `
+exports[`ContactUs match to snapshot 1`] = `
 <View
   style={
     Object {
@@ -158,25 +158,71 @@ exports[`OrderDetail match to snapshot 1`] = `
               </RNSVGSvgView>
             </View>
             <Text>
-              Order Detail
+              Contact Us
             </Text>
           </View>
           <View>
-            <View>
-              <Text>
-                Sample #
-              </Text>
-              <Text>
-                New Request
-              </Text>
+            <View
+              style={Object {}}
+            >
+              <View>
+                <Text
+                  style={
+                    Array [
+                      undefined,
+                      false,
+                    ]
+                  }
+                >
+                  Message
+                </Text>
+              </View>
+              <TextInput
+                allowFontScaling={true}
+                autoCapitalize="none"
+                onChangeText={[Function]}
+                rejectResponderTermination={true}
+                secureTextEntry={false}
+                style={
+                  Array [
+                    undefined,
+                    undefined,
+                    false,
+                  ]
+                }
+                underlineColorAndroid="transparent"
+                value=""
+              />
             </View>
           </View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="small"
-          />
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Send Message
+            </Text>
+          </View>
         </View>
       </RCTScrollView>
     </View>

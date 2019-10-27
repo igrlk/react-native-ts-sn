@@ -10,8 +10,8 @@ export default EStyleSheet.create({
 	titleText: {
 		marginLeft: 12,
 		fontFamily: 'Poppins',
-		fontSize: 24,
-		lineHeight: 36,
+		fontSize: '$fontSize.xlarge',
+		marginBottom: 25,
 	},
 	quantity: {
 		flexDirection: 'row',
@@ -19,7 +19,7 @@ export default EStyleSheet.create({
 	text: {
 		marginTop: 44,
 		marginBottom: 55,
-		fontSize: 16,
+		fontSize: '$fontSize.small',
 		fontFamily: 'Poppins',
 		color: '#9E9E9E',
 		paddingRight: 10,

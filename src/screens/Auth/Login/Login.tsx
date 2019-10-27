@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, KeyboardAvoidingView } from 'react-native';
 
 import Screen from 'library/common/commonComponents/Screen';
 import WithLoader from 'library/common/commonComponents/WithLoader';
@@ -32,42 +32,45 @@ export default function Login() {
 
   return (
     <Screen>
-      <WithLoader loading={isCheckingToken}>
-        <View style={styles.logo}>
-          <LoginLogo />
-        </View>
-
-        <WithLoader loading={loading}>
-          <Input
-            value={email}
-            onChange={setEmail}
-            label='Email'
-            style={styles.inputEmail}
-            error={emailError}
-          />
-          <Input
-            value={password}
-            onChange={setPassword}
-            label='Password'
-            rightLabel={
-              <Text style={styles.forgotPassword} onPress={getNavigateTo('ForgotPasswordCreate')}>
-                Forgot password
-              </Text>
-            }
-            style={styles.inputPassword}
-            error={passwordError}
-          />
-
-          <Button onClick={makeLogin}>Login</Button>
-
-          <View style={styles.orContainer}>
-            <View style={styles.orLine} />
-            <Text style={styles.orText}>or</Text>
+      <KeyboardAvoidingView behavior='padding'>
+        <WithLoader loading={isCheckingToken}>
+          <View style={styles.logo}>
+            <LoginLogo />
           </View>
 
-          <Button onClick={getNavigateTo('SignUpCreate')}>Create an Account</Button>
+          <WithLoader loading={loading}>
+
+            <Button onClick={getNavigateTo('SignUpCreate')}>Create an Account</Button>
+
+            <View style={styles.orContainer}>
+              <View style={styles.orLine} />
+              <Text style={styles.orText}>or</Text>
+            </View>
+
+            <Button onClick={makeLogin}>Login</Button>
+
+            <Input
+              value={email}
+              onChange={setEmail}
+              label='Email'
+              style={styles.inputEmail}
+              error={emailError}
+            />
+            <Input
+              value={password}
+              onChange={setPassword}
+              label='Password'
+              rightLabel={
+                <Text style={styles.forgotPassword} onPress={getNavigateTo('ForgotPasswordCreate')}>
+                  Forgot password
+                </Text>
+              }
+              style={styles.inputPassword}
+              error={passwordError}
+            />
+          </WithLoader>
         </WithLoader>
-      </WithLoader>
+      </KeyboardAvoidingView>
     </Screen>
   );
 }

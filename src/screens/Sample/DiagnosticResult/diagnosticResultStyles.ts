@@ -22,7 +22,7 @@ export default EStyleSheet.create({
 	bage: {
 		height: 24,
 		width: 110,
-		fontSize: 12,
+		fontSize: '$fontSize.xmini',
 		borderRadius: 4,
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -41,7 +41,7 @@ export default EStyleSheet.create({
 		marginBottom: 29,
 	},
 	text: {
-		fontSize: 14,
+		fontSize: '$fontSize.mini',
 		fontStyle: 'italic',
 		marginBottom: 14,
 	},

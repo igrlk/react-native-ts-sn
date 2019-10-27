@@ -1,14 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import ShareViaEmail from '../ShareViaEmail';
+import ContactUs from '../ContactUs';
 
-describe('ShareViaEmail', () => {
+describe('ContactUs', () => {
 	it('match to snapshot', () => {
         const tree = renderer.create(
-            <ShareViaEmail
-                navigation={ {state: { params: { data: [] } } } as any}
-            />
+            <ContactUs />
         ).toJSON();
 		expect(tree).toMatchSnapshot();
     });

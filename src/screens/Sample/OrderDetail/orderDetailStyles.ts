@@ -8,8 +8,7 @@ export default EStyleSheet.create({
 		marginBottom: 12,
 		color: '#9E9E9E',
 		fontFamily: 'Poppins',
-		fontSize: 14,
-		lineHeight: 21,
+		fontSize: '$fontSize.mini',
 	},
 	sampleStatusContainer: {
 		marginBottom: 40,
@@ -35,8 +34,7 @@ export default EStyleSheet.create({
 	},
 	sampleStatusText: {
 		fontFamily: 'Poppins',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 		color: '#9E9E9E',
 		marginTop: -3,
 	},
@@ -58,8 +56,7 @@ export default EStyleSheet.create({
 	sampleStatusDate: {
 		color: '$colorBlack',
 		fontFamily: 'Poppins',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 	},
 	circle: {
 		width: 11,

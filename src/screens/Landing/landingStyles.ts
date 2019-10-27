@@ -17,12 +17,14 @@ export default EStyleSheet.create({
 		alignItems: 'center',
 	},
 	inner: {
-		width: 300,
+		width: '100%',
+		padding: 30,
 	},
 	hamburger: {
 		position: 'absolute',
 		top: 0,
 		right: 0,
+		marginRight: 30,
 	},
 	buttons: {
 		marginTop: 114,
@@ -43,13 +45,12 @@ export default EStyleSheet.create({
 	buttonTitle: {
 		color: '$colorGreen',
 		fontFamily: 'Poppins',
-		fontSize: 18,
+		fontSize: '$fontSize.medium',
 	},
 	buttonText: {
 		fontFamily: 'Poppins',
 		color: '#605A4A',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 	},
 	menu: {
 		position: 'absolute',
@@ -78,6 +79,7 @@ export default EStyleSheet.create({
 		right: 0,
 		top: 0,
 		height: '100%',
+		width: '50%',
 		backgroundColor: '$colorWhite',
 		paddingTop: 60,
 		shadowColor: '#000',
@@ -89,20 +91,21 @@ export default EStyleSheet.create({
 		borderBottomWidth: 1,
 		borderBottomColor: '#E1E1E1',
 		paddingBottom: 16,
+		marginBottom: 30,
 	},
 	menuHeaderTitle: {
 		marginBottom: 5,
 	},
 	menuText: {
 		fontFamily: 'Poppins',
-		fontSize: 16,
-		lineHeight: 24,
+		fontSize: '$fontSize.small',
+		overflow: 'hidden',
 		color: '$colorBlack',
 		paddingLeft: 23,
 		paddingRight: 43,
 	},
 	menuItem: {
-		lineHeight: 60,
+		marginBottom: 30,
 	},
 	list: {
 		backgroundColor: '$colorWhite',
@@ -111,19 +114,15 @@ export default EStyleSheet.create({
 		paddingTop: 17,
 		flex: 1,
 	},
-	listMargin: {
-		marginBottom: 8,
-	},
 	buttonViewAll: {
 		marginTop: 10,
 	},
 	logoText: {
 		marginTop: 16,
-		marginBottom: 16,
+		marginBottom: 20,
 		fontFamily: 'Poppins',
 		fontWeight: 'bold',
-		fontSize: 16,
-		lineHeight: 24,
+		fontSize: '$fontSize.small',
 		color: '$colorWhite',
 	},
 	alreadyOrdered: {

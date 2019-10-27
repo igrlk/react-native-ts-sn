@@ -28,6 +28,7 @@ export const GET_SAMPLES = gql`
 	query allSamples {
 		allSamples {
 			uuid
+			number
 			fullName
 			address
 			city
@@ -38,6 +39,8 @@ export const GET_SAMPLES = gql`
 			crop
 			created
 			diseases
+			status
+			data
 		}
 	}
 `;
