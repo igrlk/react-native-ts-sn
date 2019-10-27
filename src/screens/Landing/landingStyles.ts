@@ -4,7 +4,7 @@ import { Dimensions } from 'react-native';
 export default EStyleSheet.create({
 	container: {
 		backgroundColor: '$colorGreen',
-		paddingTop: 60,
+		paddingTop: 40,
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
@@ -25,6 +25,7 @@ export default EStyleSheet.create({
 		top: 0,
 		right: 0,
 		marginRight: 30,
+		marginTop: 30,
 	},
 	buttons: {
 		marginTop: 114,

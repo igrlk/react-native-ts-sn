@@ -24,11 +24,11 @@ export default function ListOfSamples({ samples }: ListOfSamplesProps) {
 						style={styles.sample}
 					>
 						<View>
-							<Text style={styles.sampleId}>{sample.number ? sample.number : 'New Request'}</Text>
+							<Text style={styles.sampleId}>{getNumberOfSample(sample)}</Text>
 							<View style={styles.sampleText}>
 								<View style={[styles.circle, getStatusColor(sample.status)]} />
 								<Text style={styles.sampleTextValue}>
-									{sample.status === 'Sample requested' ? 'Sample Kit Requested' : sample.status} ({getDateForSample(sample.created)})
+									{sample.status} ({getDateForSample(sample.created)})
 								</Text>
 							</View>
 						</View>
@@ -37,4 +37,8 @@ export default function ListOfSamples({ samples }: ListOfSamplesProps) {
 				))}
 		</View>
 	);
+}
+
+export const getNumberOfSample = (sample : any) => {
+	return sample.number ? sample.number : 'New Request';
 }

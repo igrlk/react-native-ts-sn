@@ -95,6 +95,29 @@ export function receiptHTML(name: string, quantity: number, dateOfRequest: strin
     `;
 }
 
+export function getResultList(data: any) {
+  const htmlString = data && data.length && data.map((item: any) => `
+    <tr>
+      <td>
+        <div style="font-size: 14px; color: #9E9E9E">Pathogen</div>
+        <div style="font-size: 16px; color: #000">${item.pathogen}</div>
+      </td>
+      <td>
+        <div style=" width: 90px; padding: 5px 10px; border-radius: 4px; text-align: center; color: #FFF; margin: 0 0 0 auto; ${item.result ? 'background-color: #FF8412;' : 'background-color: #2FD396;'}">
+          ${item.result ? 'Detected' : 'Not Detected'}
+        </div>
+      </td>
+      <tr>
+        <td colspan="2">
+          <div style="width: 100%; border-bottom: 1px solid #E1E1E1;"></div>
+        </td>
+      </tr>
+    </tr>
+  `).join('')
+
+  return htmlString || '';
+}
+
 export function getDiagnosticResultHTML(sample: string, crop: string, samplingLocation: string, dateOfSampling: string, dateOfReport: string, data: any) {
   return `
     <div style="padding: 30px;">
@@ -212,24 +235,7 @@ export function getDiagnosticResultHTML(sample: string, crop: string, samplingLo
 
       <table border="0" style="width: 100%; border-spacing: 8px;">
         <tbody>
-          ${data && data.map((item: any) => `
-            <tr>
-              <td>
-                <div style="font-size: 14px; color: #9E9E9E">Pathogen</div>
-                <div style="font-size: 16px; color: #000">${item.pathogen}</div>
-              </td>
-              <td>
-                <div style=" width: 90px; padding: 5px 10px; border-radius: 4px; text-align: center; color: #FFF; margin: 0 0 0 auto; ${item.result ? 'background-color: #FF8412;' : 'background-color: #2FD396;'}">
-                  ${item.result ? 'Detected' : 'Not Detected'}
-                </div>
-              </td>
-              <tr>
-                <td colspan="2">
-                  <div style="width: 100%; border-bottom: 1px solid #E1E1E1;"></div>
-                </td>
-              </tr>
-            </tr>
-          `).join('')}
+         ${getResultList(data)}
         </tbody>
       </table>
     </div>
@@ -284,24 +290,7 @@ export function getHTMLForEmail(sample: string, crop: string, samplingLocation: 
 
       <table border="0" style="width: 100%; border-spacing: 8px;">
         <tbody>
-          ${data && data.map((item: any) => `
-            <tr>
-              <td>
-                <div style="font-size: 14px; color: #9E9E9E">Pathogen</div>
-                <div style="font-size: 16px; color: #000">${item.pathogen}</div>
-              </td>
-              <td>
-                <div style=" width: 90px; padding: 5px 10px; border-radius: 4px; text-align: center; color: #FFF; margin: 0 0 0 auto; ${item.result ? 'background-color: #FF8412;' : 'background-color: #2FD396;'}">
-                  ${item.result ? 'Detected' : 'Not Detected'}
-                </div>
-              </td>
-              <tr>
-                <td colspan="2">
-                  <div style="width: 100%; border-bottom: 1px solid #E1E1E1;"></div>
-                </td>
-              </tr>
-            </tr>
-          `).join('')}
+          ${getResultList(data)}
         </tbody>
       </table>
     </div>

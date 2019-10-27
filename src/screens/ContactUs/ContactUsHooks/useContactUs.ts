@@ -23,7 +23,7 @@ export default function useContactUs() {
             return;
         }
 
-        sendMessageQuery({variables: { email, title, body }});
+        makeMessageHandler({ sendMessageQuery, email, title, body });
 	}
 
     return {
@@ -34,4 +34,20 @@ export default function useContactUs() {
         messageError,
         setMessageError,
     }
+}
+
+export const makeMessageHandler = (
+    { 
+        sendMessageQuery,
+        email,
+        title,
+        body,
+    } : {
+        sendMessageQuery: any;
+        body: string;
+        title: string;
+        email: string;
+    }
+) => {
+    sendMessageQuery({variables: { email, title, body }});
 }

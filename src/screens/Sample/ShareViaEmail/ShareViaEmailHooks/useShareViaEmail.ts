@@ -28,7 +28,7 @@ export default function useShareViaEmail(navigation: any) {
             setEmailError(null);
         }
 
-        sendEmailQuery({variables: { email, title, body }});
+        makeEmailHandler({ sendEmailQuery, email, title, body });
 	}
 
     return {
@@ -40,4 +40,20 @@ export default function useShareViaEmail(navigation: any) {
         loading,
         setEmailError,
     }
+}
+
+export const makeEmailHandler = (
+    { 
+        sendEmailQuery,
+        email,
+        title,
+        body,
+    } : {
+        sendEmailQuery: any;
+        body: string;
+        title: string;
+        email: string;
+    }
+) => {
+    sendEmailQuery({variables: { email, title, body }});
 }
