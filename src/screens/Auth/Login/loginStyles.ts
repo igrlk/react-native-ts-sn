@@ -12,8 +12,7 @@ export default EStyleSheet.create({
 	orText: {
 		color: '#929292',
 		fontFamily: 'Poppins',
-		fontSize: 13,
-		lineHeight: 20,
+		fontSize: '$fontSize.mini',
 		paddingLeft: 5,
 		paddingRight: 5,
 		backgroundColor: '$colorWhite',
@@ -26,6 +25,7 @@ export default EStyleSheet.create({
 		top: '50%',
 	},
 	inputEmail: {
+		marginTop: 30,
 		marginBottom: 25,
 	},
 	inputPassword: {
@@ -33,8 +33,7 @@ export default EStyleSheet.create({
 	},
 	forgotPassword: {
 		color: '$colorBlue',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 		marginBottom: 3,
 	},
 	logo: {

@@ -30,8 +30,8 @@ export default function Landing({ navigation }: LandingProps) {
 	});
 
 	const [samples, setSamples] = useState([]);
-
 	const { loading, data, refetch } = useQuery(GET_SAMPLES);
+
 	useEffect(() => {
 		refetch();
 	}, [navigation.state.params]);
@@ -82,7 +82,7 @@ export default function Landing({ navigation }: LandingProps) {
 										</View>
 										<View>
 											<Text style={styles.buttonTitle}>FAQ</Text>
-											<Text style={styles.buttonText}>Know about our services</Text>
+											<Text style={styles.buttonText}>Learn about our service</Text>
 										</View>
 									</TouchableOpacity>
 								</View>
@@ -95,7 +95,6 @@ export default function Landing({ navigation }: LandingProps) {
 						samples.length > 0 && (
 							<View style={styles.list}>
 								<SubHeader>Sample List</SubHeader>
-								<View style={styles.listMargin} />
 								<ListOfSamples samples={samples.slice(0, 6)} />
 								<Button
 									style={styles.buttonViewAll}
@@ -114,8 +113,11 @@ export default function Landing({ navigation }: LandingProps) {
 				<View style={styles.menuContainer}>
 					<View style={styles.menuHeader}>
 						<Text style={[styles.menuText, styles.menuHeaderTitle]}>My Full name</Text>
-						<Text style={styles.menuText}>{email}</Text>
+						<Text style={styles.menuText} numberOfLines={1} ellipsizeMode='tail'>{email}</Text>
 					</View>
+					<TouchableOpacity onPress={getNavigateTo('ContactUs')}>
+						<Text style={[styles.menuText, styles.menuItem]}>Contact Us</Text>
+					</TouchableOpacity>
 					<TouchableOpacity onPress={logout}>
 						<Text style={[styles.menuText, styles.menuItem]}>Logout</Text>
 					</TouchableOpacity>

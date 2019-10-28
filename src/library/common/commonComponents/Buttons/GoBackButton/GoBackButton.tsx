@@ -13,7 +13,7 @@ interface GoBackButtonProps {
 export default function GoBackButton({ children }: GoBackButtonProps) {
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity onPress={goBack}>
+			<TouchableOpacity style={styles.backButton} onPress={goBack}>
 				<GoBackIcon />
 			</TouchableOpacity>
 			<Text style={styles.text}>{children}</Text>

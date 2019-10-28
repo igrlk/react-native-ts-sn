@@ -12,8 +12,8 @@ export default EStyleSheet.create({
 	},
 	sampleId: {
 		fontFamily: 'Poppins',
-		fontSize: 16,
-		lineHeight: 24,
+		fontSize: '$fontSize.small',
+		marginBottom: 8,
 		color: '$colorBlack',
 	},
 	sampleText: {
@@ -23,14 +23,13 @@ export default EStyleSheet.create({
 	},
 	sampleTextValue: {
 		fontFamily: 'Poppins',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 		color: '#9E9E9E',
 	},
 	circle: {
 		width: 8,
 		height: 8,
-		backgroundColor: '#FF8412',
+		backgroundColor: '#EA4640',
 		marginRight: 6,
 		borderRadius: 100,
 	},

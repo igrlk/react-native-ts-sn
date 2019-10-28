@@ -13,7 +13,7 @@ export default EStyleSheet.create({
 	},
 	buttonText: {
 		color: '$colorWhite',
-		fontSize: 14,
+		fontSize: '$fontSize.mini',
 		fontFamily: 'Poppins',
 	},
 	buttonInfo: {

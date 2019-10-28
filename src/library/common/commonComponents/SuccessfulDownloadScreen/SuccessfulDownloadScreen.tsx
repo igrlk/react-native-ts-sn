@@ -14,7 +14,7 @@ interface SuccessfulDownloadScreenProps {
 } 
 
 export default function SuccessfulDownloadScreen({ navigation }: SuccessfulDownloadScreenProps) {
-	const params = navigation.state.params || {};
+	const params = getParams({ navigation });
 
 	return (
 		<Screen isCentered>
@@ -29,4 +29,8 @@ export default function SuccessfulDownloadScreen({ navigation }: SuccessfulDownl
 			</View>
 		</Screen>
 	);
+}
+
+export const getParams = ({ navigation }: any) => {
+	return navigation.state.params || {};
 }

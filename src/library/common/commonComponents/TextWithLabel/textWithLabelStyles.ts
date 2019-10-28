@@ -9,14 +9,12 @@ export default EStyleSheet.create({
 	},
 	label: {
 		fontFamily: 'Poppins',
-		fontSize: 14,
-		lineHeight: 21,
+		fontSize: '$fontSize.mini',
 		color: '#9E9E9E',
 	},
 	text: {
 		fontFamily: 'Poppins',
-		fontSize: 16,
-		lineHeight: 24,
+		fontSize: '$fontSize.small',
 		color: '$colorBlack',
 	},
 });

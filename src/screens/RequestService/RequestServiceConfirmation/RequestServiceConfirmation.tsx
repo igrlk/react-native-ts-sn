@@ -9,6 +9,7 @@ import { getResetNavigation } from 'library/utilities/navigator';
 import SuccessConfirmMessageIcon from 'resources/images/svg/SuccessConfirmMessageIcon';
 import { receiptHTML } from 'library/utilities/getHTML';
 import dowloadPdf from 'library/utilities/downloadPDF';
+import { getDateForSample } from 'library/utilities/date';
  
 import styles from './requestServiceConfirmationStyles';
  
@@ -19,8 +20,9 @@ interface RequestServiceConfirmationProps {
 export default function RequestServiceConfirmation({
     navigation,
 }: RequestServiceConfirmationProps) {
-	const params = navigation.state.params || {};
-    const date = 'Sep 5, 2019';
+    const params = navigation.state.params || {};
+    const newDate = new Date().getTime();
+    const date = getDateForSample(newDate);
     const options = {
         html: receiptHTML(params.fullName, params.selectedSamplesCount, date),
         fileName: 'Sample-request-receipt',
@@ -44,11 +46,14 @@ export default function RequestServiceConfirmation({
             </View>
  
             <Text style={styles.text}>
-                Thank you for your request. You will receive a sample kit(s), instructions and pre-paid
-                return envelope in 3-5 business days.
+                Thank you for your request! Look for a confirmation message in your email for further information.
             </Text>
  
-            <Button type='info' onClick={() => dowloadPdf(options, 'SuccessfulDownloadScreen', 'RequestServiceConfirmation')} style={styles.button}>
+            <Button
+                type='info'
+                onClick={() => dowloadPdf(options, 'SuccessfulDownloadScreen', 'RequestServiceConfirmation')}
+                style={styles.button}
+            >
                 Download Receipt
             </Button>
             <Button onClick={getResetNavigation('Landing')}>OK</Button>

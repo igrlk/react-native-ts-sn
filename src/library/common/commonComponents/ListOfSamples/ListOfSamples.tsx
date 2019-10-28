@@ -2,9 +2,11 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
 import ArrowRight from 'resources/images/svg/ArrowRight';
-import styles from './listOfSamplesStyles';
 import { getNavigateTo } from 'library/utilities/navigator';
 import { getDateForSample } from 'library/utilities/date';
+import getStatusColor from 'library/utilities/getStatusColor';
+
+import styles from './listOfSamplesStyles';
 
 interface ListOfSamplesProps {
 	samples: any[];
@@ -22,11 +24,11 @@ export default function ListOfSamples({ samples }: ListOfSamplesProps) {
 						style={styles.sample}
 					>
 						<View>
-							<Text style={styles.sampleId}>Request</Text>
+							<Text style={styles.sampleId}>{getNumberOfSample(sample)}</Text>
 							<View style={styles.sampleText}>
-								<View style={styles.circle} />
+								<View style={[styles.circle, getStatusColor(sample.status)]} />
 								<Text style={styles.sampleTextValue}>
-									Sample Requested ({getDateForSample(sample.created)})
+									{sample.status} ({getDateForSample(sample.created)})
 								</Text>
 							</View>
 						</View>
@@ -35,4 +37,8 @@ export default function ListOfSamples({ samples }: ListOfSamplesProps) {
 				))}
 		</View>
 	);
+}
+
+export const getNumberOfSample = (sample : any) => {
+	return sample.number ? sample.number : 'New Request';
 }

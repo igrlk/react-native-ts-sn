@@ -1,11 +1,12 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-import { Dimensions } from 'react-native';
 
 export default EStyleSheet.create({
+	addressForm: {
+		marginTop: 20,
+	},
 	title: {
 		fontFamily: 'Poppins',
-		fontSize: 18,
-		lineHeight: 27,
+		fontSize: '$fontSize.medium',
 		color: '$colorBlack',
 	},
 	info: {
@@ -16,8 +17,7 @@ export default EStyleSheet.create({
 	infoText: {
 		paddingLeft: 6,
 		fontFamily: 'Poppins',
-		fontSize: 12,
-		lineHeight: 18,
+		fontSize: '$fontSize.xmini',
 		color: '#9E9E9E',
 	},
 	container: {
@@ -54,7 +54,7 @@ export default EStyleSheet.create({
 	},
 	controlCountText: {
 		fontFamily: 'Poppins',
-		fontSize: 16,
+		fontSize: '$fontSize.small',
 		color: '$colorBlack',
 	},
 	controlCountTextDisabled: {
@@ -80,8 +80,7 @@ export default EStyleSheet.create({
 	},
 	totalText: {
 		fontFamily: 'Poppins',
-		fontSize: 24,
-		lineHeight: 36,
+		fontSize: '$fontSize.xlarge',
 		color: '$colorBlack',
 	},
 });

@@ -9,8 +9,7 @@ export default EStyleSheet.create({
 	},
 	totalText: {
 		fontFamily: 'Poppins',
-		fontSize: 24,
-		lineHeight: 36,
+		fontSize: '$fontSize.xlarge',
 		color: '$colorBlack',
 	},
 	totalCountWrapper: {
@@ -22,7 +21,7 @@ export default EStyleSheet.create({
 		marginRight: 11,
 		color: '$colorBlack',
 		fontFamily: 'Poppins',
-		fontSize: 14,
+		fontSize: '$fontSize.mini',
 		textDecorationLine: 'line-through',
 	},
 	input: {

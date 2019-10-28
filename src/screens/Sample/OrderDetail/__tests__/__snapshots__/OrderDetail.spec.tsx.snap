@@ -166,7 +166,9 @@ exports[`OrderDetail match to snapshot 1`] = `
               <Text>
                 Sample #
               </Text>
-              <Text />
+              <Text>
+                New Request
+              </Text>
             </View>
           </View>
           <ActivityIndicator

@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 import Screen from 'library/common/commonComponents/Screen';
 import GoBackButton from 'library/common/commonComponents/Buttons/GoBackButton';
@@ -35,50 +36,23 @@ export default function RequestServiceCheckout() {
 		zipCodeError,
 	} = useRequestServiceCheckout();
 
+	const capitalizeFirstLetter = (str: string) => {
+		return str.toLowerCase()
+		.split(' ')
+		.map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+		.join(' ');
+	}
+
 	return (
 		<Screen>
-			<KeyboardAvoidingView behavior='padding'>
+			<KeyboardAwareScrollView resetScrollToCoords={{ x: 0, y: 0 }}>
 				<GoBackButton>Request Service</GoBackButton>
-				<View style={styles.container}>
-					<View>
-						<Text style={styles.title}>Number of samples</Text>
-						<View style={styles.info}>
-							<TouchableOpacity onPress={getNavigateTo('FAQ', { toSamples: true })}>
-								<RequestServiceInfo />
-							</TouchableOpacity>
-							<Text style={styles.infoText}>$300/ sample</Text>
-						</View>
-					</View>
 
-					<View style={styles.controls}>
-						<TouchableOpacity style={styles.control} onPress={incrementSelectedSamples}>
-							<Text
-								style={[
-									styles.controlText,
-									selectedSamplesCount === availableSamplesCount && styles.controlTextDisabled,
-								]}
-							>
-								+
-							</Text>
-						</TouchableOpacity>
-						<View style={styles.controlCount}>
-							<Text style={styles.controlCountText}>{selectedSamplesCount}</Text>
-						</View>
-						<TouchableOpacity style={styles.control} onPress={decrementSelectedSamples}>
-							<Text
-								style={[styles.controlText, selectedSamplesCount === 1 && styles.controlTextDisabled]}
-							>
-								-
-							</Text>
-						</TouchableOpacity>
-					</View>
-				</View>
-
-				<View>
+				<View style={styles.addressForm}>
 					<Text style={[styles.title, styles.inputTitle]}>Add Mailing Address</Text>
 					<Input
 						label='Full Name'
-						value={fullName}
+						value={capitalizeFirstLetter(fullName)}
 						onChange={setFullName}
 						style={styles.input}
 						error={fullNameError}
@@ -94,7 +68,7 @@ export default function RequestServiceCheckout() {
 					/>
 					<Input
 						label='City'
-						value={city}
+						value={capitalizeFirstLetter(city)}
 						onChange={setCity}
 						style={styles.input}
 						error={cityError}
@@ -103,7 +77,7 @@ export default function RequestServiceCheckout() {
 						<View style={styles.halfInputsContainer}>
 							<Input
 								label='State'
-								value={state}
+								value={capitalizeFirstLetter(state)}
 								onChange={setState}
 								style={styles.input}
 								error={stateError}
@@ -122,13 +96,48 @@ export default function RequestServiceCheckout() {
 					</View>
 				</View>
 
+				<View style={styles.container}>
+					<View>
+						<Text style={styles.title}>Number of samples</Text>
+						<View style={styles.info}>
+							<TouchableOpacity onPress={getNavigateTo('FAQ', { toSamples: true })}>
+								<RequestServiceInfo />
+							</TouchableOpacity>
+							<Text style={styles.infoText}>$300/ sample</Text>
+						</View>
+					</View>
+
+					<View style={styles.controls}>
+						<TouchableOpacity style={styles.control} onPress={decrementSelectedSamples}>
+							<Text
+								style={[styles.controlText, selectedSamplesCount === 1 && styles.controlTextDisabled]}
+							>
+								-
+							</Text>
+						</TouchableOpacity>
+						<View style={styles.controlCount}>
+							<Text style={styles.controlCountText}>{selectedSamplesCount}</Text>
+						</View>
+						<TouchableOpacity style={styles.control} onPress={incrementSelectedSamples}>
+							<Text
+								style={[
+									styles.controlText,
+									selectedSamplesCount === availableSamplesCount && styles.controlTextDisabled,
+								]}
+							>
+								+
+							</Text>
+						</TouchableOpacity>
+					</View>
+				</View>
+
 				<View style={styles.total}>
 					<Text style={styles.totalText}>Total</Text>
 					<Text style={styles.totalText}>$ {selectedSamplesCount * 300}</Text>
 				</View>
 
 				<Button onClick={makeCheckout}>Checkout</Button>
-			</KeyboardAvoidingView>
+			</KeyboardAwareScrollView>
 		</Screen>
 	);
 }

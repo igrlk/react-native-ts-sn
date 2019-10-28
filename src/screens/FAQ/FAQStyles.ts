@@ -6,13 +6,17 @@ export default EStyleSheet.create({
 	},
 	title: {
 		fontWeight: 'bold',
-		fontSize: 17,
+		fontSize: '$fontSize.medium',
 		paddingBottom: 0,
 	},
 	text: {
 		fontFamily: 'Poppins',
-		fontSize: 14,
-		lineHeight: 30,
+		fontSize: '$fontSize.mini',
 		paddingBottom: 20,
+	},
+	button: {
+		display: 'flex',
+		alignItems: 'flex-end',
+		marginBottom: 40,
 	},
 });

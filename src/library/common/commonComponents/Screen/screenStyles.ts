@@ -9,7 +9,8 @@ export default EStyleSheet.create({
 		flex: 1,
 	},
 	screenInner: {
-		width: 300,
+		width: '100%',
+		padding: 30,
 	},
 	screenCentered: {
 		justifyContent: 'center',
